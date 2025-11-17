@@ -1,0 +1,17 @@
+
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+
+# Path to your downloaded chromedriver
+path = "/home/bharath/Downloads/chromedriver"
+
+# Start Chrome using the driver
+service = Service(path)
+driver = webdriver.Chrome(service=service)
+
+# Open Flipkart
+driver.get("https://www.flipkart.com")
+
+# Keep it open
+input("Press Enter to close...")
+driver.quit()
