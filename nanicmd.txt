@@ -1,0 +1,21 @@
+kubectl version --client
+kubectl cluster-info
+docker images
+docker login
+docker tag my-docker-app kattekolanani99/my-docker-app:latest
+docker push kattekolanani99/my-docker-app:latest
+mkdir nani
+cd nani
+notepad deployment.yaml
+notepad service.yaml
+dir
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+dkubectl get pods
+kubectl get svc
+
+
+py --version
+py -m pip --version
+py -m pip install selenium
+py -m pip install webdriver-manager
